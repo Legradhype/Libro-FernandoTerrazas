@@ -1,0 +1,304 @@
+:root {
+  --color-primario: #3A3A3A;
+  --color-texto-gris: #5A5A5A;
+  --color-boton-principal: #A66A3D;
+  --color-separador-linea: #E0E0E0;
+  --color-fondo-claro: #F8F7F3;
+  --color-caja-evento: #F5F1EB;
+  --color-caja-libro: #F5F1EB;
+  --fuente-principal: 'Arial', sans-serif;
+  --fuente-titulo: 'Newsreader', serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo-claro);
+  color: var(--color-primario);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s, background-color 0.3s;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-contenedor {
+  width: 100%;
+  border-bottom: 1px solid var(--color-separador-linea);
+  background-color: white;
+}
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  width: min(100%, 1280px);
+  margin: 0 auto;
+  padding: 12px 40px;
+}
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo-group img[alt="Book Club Logo"] {
+  width: 16px;
+  height: 16px;
+}
+.logo-group h1 {
+  font-family: var(--fuente-titulo);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  height: 50px;
+}
+header nav a {
+  font-family: var(--fuente-titulo);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+header nav a:hover {
+  color: var(--color-primario);
+}
+header nav button {
+  background-color: #AB5E17;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 16px;
+  width: 84px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+header nav button:hover {
+  background-color: var(--color-boton-principal);
+}
+header nav img[alt="Foto de Perfil"] {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#encabezado-principal {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 80px 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#encabezado-principal img {
+  width: 400px;
+  height: 280px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.hero-content {
+  width: 496px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-content h2 {
+  font-family: var(--fuente-titulo);
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+.hero-content p {
+  font-family: var(--fuente-titulo);
+  font-size: 16px;
+  color: var(--color-texto-gris);
+  margin-bottom: 30px;
+}
+.hero-content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--fuente-titulo);
+  font-weight: bold;
+  background-color: var(--color-boton-principal);
+  color: white;
+  height: 48px;
+  padding: 0 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 496px;
+}
+.hero-content a:hover {
+  background-color: #8C5730;
+}
+#libro-del-mes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.libro-info {
+  flex: 1;
+}
+.libro-info h2.seccion-titulo {
+  font-family: var(--fuente-titulo);
+  font-size: 22px;
+  font-weight: 700;
+  background-color: var(--color-fondo-claro);
+  margin-bottom: 5px;
+}
+.libro-info h2.libro-titulo {
+  font-family: var(--fuente-titulo);
+  font-size: 16px;
+  font-weight: 700;
+  color: #1C140D;
+  margin-bottom: 10px;
+}
+.libro-info p {
+  font-family: var(--fuente-titulo);
+  font-size: 14px;
+  color: #96734F;
+  margin-bottom: 15px;
+}
+.libro-info a {
+  display: inline-block;
+  font-family: var(--fuente-titulo);
+  font-size: 14px;
+  color: #1C140D;
+  border: 1px solid #1C140D;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+.libro-info a:hover {
+  background-color: #1C140D;
+  color: white;
+}
+#libro-del-mes img {
+  width: 320px;
+  height: 171px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+#proximos-eventos {
+  padding: 30px 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#proximos-eventos h2 {
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+  font-size: 22px;
+  color: #1C140D;
+  margin-bottom: 30px;
+}
+#proximos-eventos ul li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding: 8px 16px;
+  background-color: var(--color-fondo-claro);
+  border-radius: 8px;
+
+}
+#proximos-eventos ul li img[alt="Calendario"] {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  background-color: var(--color-caja-evento);
+  border-radius: 8px;
+  object-fit: contain;
+}
+#proximos-eventos li div {
+  display: flex;
+  flex-direction: column;
+}
+#proximos-eventos h3,
+#proximos-eventos time {
+  margin: 0;
+  font-family: var(--fuente-titulo);
+}
+#proximos-eventos h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #1C140D;
+}
+#proximos-eventos time {
+  font-size: 14px;
+  color: #96734F;
+}
+#libros-anteriores {
+  padding: 50px 16px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+#libros-anteriores h2 {
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+  font-size: 22px;
+  color: #1C140D;
+  margin-bottom: 20px;
+}
+.galeria-libros {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.galeria-libros .libro {
+  flex: 0 0 160px;
+  text-align: center;
+}
+.galeria-libros .libro img {
+  width: 160px;
+  height: 213px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.galeria-libros .libro p {
+  font-family: var(--fuente-titulo);
+  margin: 4px 0px;
+}
+.galeria-libros .libro p:first-of-type {
+  font-weight: 500;
+  font-size: 16px;
+  color: #1C140D;
+}
+.galeria-libros .libro p:last-of-type {
+  font-weight: 400;
+  font-size: 14px;
+  color: #96734F;
+}
+#pie-de-pagina {
+  text-align: center;
+  background-color: var(--color-fondo-claro);
+  padding: 16px 0;
+}
+#pie-de-pagina p {
+  max-width: 90%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  color: #96734F;
+  font-family: var(--fuente-titulo);
+  line-height: 24px;
+}
