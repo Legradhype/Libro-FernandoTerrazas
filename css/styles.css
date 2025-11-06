@@ -12,10 +12,10 @@
 * {
   box-sizing: border-box;
 }
-body {
+body {  
   margin: 0;
   font-family: var(--fuente-principal);
-  background-color: var(--color-fondo-claro);
+  background-color: white;
   color: var(--color-primario);
 }
 a {
@@ -161,7 +161,7 @@ header nav img[alt="Foto de Perfil"] {
   font-family: var(--fuente-titulo);
   font-size: 22px;
   font-weight: 700;
-  background-color: var(--color-fondo-claro);
+  background-color: white;
   margin-bottom: 5px;
 }
 .libro-info h2.libro-titulo {
@@ -216,7 +216,7 @@ header nav img[alt="Foto de Perfil"] {
   gap: 16px;
   margin-bottom: 12px;
   padding: 8px 16px;
-  background-color: var(--color-fondo-claro);
+  background-color:white;
   border-radius: 8px;
 
 }
@@ -291,7 +291,7 @@ header nav img[alt="Foto de Perfil"] {
 }
 #pie-de-pagina {
   text-align: center;
-  background-color: var(--color-fondo-claro);
+  background-color:white;
   padding: 16px 0;
 }
 #pie-de-pagina p {
